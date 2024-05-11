@@ -2,7 +2,7 @@ import { useState } from "react";
 import Places from "./Places.json";
 import TourPlaces from "./TourPlaces";
 
-const TourList = ({ tourTitle }) => {
+const TourList = ({ tourTitle, categoryClicked }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 10;
   const lastIndex = currentPage * recordsPerPage;
@@ -12,8 +12,6 @@ const TourList = ({ tourTitle }) => {
   const numbers = [...Array(npage + 1).keys()].slice(1);
 
   const categoryTitle = tourTitle;
-  // const [categoryTitle, setCategoryTitle] = useState("");
-  // setCategoryTitle(tourTitle);
 
   const mostPopular = Places.filter(
     (place) => place.category === `${categoryTitle}`
@@ -25,7 +23,7 @@ const TourList = ({ tourTitle }) => {
         Availabe tour packages
       </p>
       <div className="mx-2 lg:mx-12 grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center py-2 rounded-xl text-center">
-        {categoryTitle === null
+        {categoryClicked === false
           ? records.map((place) => <TourPlaces key={place.id} place={place} />)
           : mostPopular.map((place) => (
               <TourPlaces key={place.id} place={place} />

@@ -7,13 +7,20 @@ import Recommendation from "./Recommendation";
 const Home = ({ open }) => {
   const [tourTitle, setTourTitle] = useState("");
   const [weatherInfo, setWeatherInfo] = useState(null);
+  const [travelers, setTravelers] = useState(0);
+  const [categoryClicked, setCategoryClicked] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
   function changeCategory(title) {
     setTourTitle(title);
+    setCategoryClicked(true);
   }
+
   const [city, setCity] = useState("");
+  const [date, setDate] = useState("");
 
   function getWeather() {
+    setClicked((clicked) => !clicked);
     const apiKey = "f87dae90b1b8a72f7f2f9c780bd9208b";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
@@ -49,6 +56,8 @@ const Home = ({ open }) => {
           city={city}
           setCity={setCity}
           getWeather={getWeather}
+          setDate={setDate}
+          setTravelers={setTravelers}
         />
       </div>
       <div className="mb-6">
@@ -58,13 +67,16 @@ const Home = ({ open }) => {
           setCity={setCity}
           getWeather={getWeather}
           weatherInfo={weatherInfo}
+          date={date}
+          travelers={travelers}
+          clicked={clicked}
         />
       </div>
       <div className="mb-6">
         <TourCategory open={open} changeCategory={changeCategory} />
       </div>
       <div className="mb-6">
-        <TourList tourTitle={tourTitle} />
+        <TourList tourTitle={tourTitle} categoryClicked={categoryClicked} />
       </div>
     </div>
   );

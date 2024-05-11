@@ -12,7 +12,7 @@ const Category = ({ open, changeCategory }) => {
       <p className="text-lg lg:text-3xl mb-4 m-2 lg:mx-12 text-sky-950 dark:text-white">
         Or select from a category
       </p>
-      <div className="mx-2 lg:mx-12 grid grid-cols-2 md:flex gap-4 justify-center">
+      <div className="mx-2 lg:mx-12 grid grid-cols-2 md:grid-cols-5 gap-4 justify-center">
         {placeCategory.map((place) => (
           <div
             className="card w-auto bg-base-100 shadow-xl image-full"

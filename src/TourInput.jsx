@@ -1,4 +1,10 @@
-const TourInput = ({ open, setCity, getWeather }) => {
+import { FaLocationArrow } from "react-icons/fa";
+
+import { BsFillPeopleFill } from "react-icons/bs";
+
+import { CiCalendarDate } from "react-icons/ci";
+
+const TourInput = ({ open, setCity, getWeather, setDate, setTravelers }) => {
   return (
     <div
       className={`${
@@ -10,23 +16,41 @@ const TourInput = ({ open, setCity, getWeather }) => {
       <p className="text-center text-lg lg:mx-28  border-b-2 mb-4 lg:mb-0 border-sky-200 rounded uppercase text-sky-950 tracking-wides">
         Enter Tour Details
       </p>
-      <div className="flex flex-col md:flex-row justify-center items-center  md:my-6 gap-6">
-        <input
-          type="text"
-          placeholder="Where to?"
-          className="input input-bordered hover:input-info w-full max-w-xs"
-          onChange={(e) => setCity(e.target.value)}
-        />
-        <input
-          type="date"
-          placeholder=""
-          className="input input-bordered hover:input-info w-full max-w-xs"
-        />
-        <input
-          type="number"
-          placeholder="Total travelers"
-          className="input input-bordered hover:input-info w-full max-w-xs"
-        />
+      <div className="flex flex-col md:flex-row justify-center items-center md:my-6 gap-6">
+        <div className="flex items-center gap-2">
+          <span>
+            <FaLocationArrow />
+          </span>
+          <input
+            type="text"
+            placeholder="Where to?"
+            className="input input-bordered hover:input-info w-full max-w-xs"
+            onChange={(e) => setCity(e.target.value)}
+          />
+        </div>
+        <div className="flex justify-center items-center gap-2 w-96">
+          <span>
+            <CiCalendarDate />
+          </span>
+          <input
+            type="date"
+            className="input input-bordered hover:input-info w-full max-w-xs"
+            onChange={(e) => setDate(e.target.value)}
+          />
+        </div>
+
+        <div className="flex items-center gap-2">
+          <span>
+            <BsFillPeopleFill />
+          </span>
+          <input
+            type="number"
+            placeholder="Total travelers"
+            className="input input-bordered hover:input-info w-full max-w-xs"
+            onChange={(e) => setTravelers(e.target.value)}
+          />
+        </div>
+
         <button
           className=" border-2 w-full max-w-xs md:w-auto px-3 py-2 rounded-md bg-sky-400 text-white hover:drop-shadow-md flex justify-center gap-2"
           onClick={getWeather}

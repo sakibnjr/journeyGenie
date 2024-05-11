@@ -1,0 +1,27 @@
+@keyframes typing {
+  0% {
+    width: 0;
+    padding-left: 0;
+    padding-right: 30%;
+  }
+  100% {
+    width: 20%;
+    padding-left: 30%;
+    padding-right: 0;
+  }
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the text is not displayed outside its containing element */
+  white-space: nowrap; /* Prevents the text from wrapping */
+  /* animation: typing 2s steps(18) infinite; Adjust timing and steps as needed */
+  animation: typing 5s linear infinite;
+  width: auto;
+}
+
+/* Optional: Adjust animation speed or steps as needed */
+/* @media (prefers-reduced-motion: reduce) {
+  .typewriter {
+    animation: none;
+  }
+} */
