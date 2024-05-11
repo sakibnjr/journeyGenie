@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "title": "Sundarbans Mangrove Forest",
+    "shortDescription": "The largest mangrove forest in the world, home to the Royal Bengal Tiger.",
+    "category": "Family Friendly",
+    "image": "image/sundarbans.jpg",
+    "cost": 2699
+  },
+  {
+    "id": 2,
+    "title": "Cox's Bazar Beach",
+    "shortDescription": "The longest natural sea beach in the world, known for its golden sand and stunning sunsets.",
+    "category": "Family Friendly",
+    "image": "image/coxsbazar.jpg",
+    "cost": 3499
+  },
+  {
+    "id": 3,
+    "title": "Lalbagh Fort",
+    "shortDescription": "An incomplete 17th-century Mughal fort complex with beautiful gardens and architecture.",
+    "category": "Family Friendly",
+    "image": "image/lalbaghfort.jpg",
+    "cost": 1199
+  },
+  {
+    "id": 4,
+    "title": "National Martyrs' Memorial",
+    "shortDescription": "A monument dedicated to the martyrs of the Bangladesh Liberation War.",
+    "category": "Family Friendly",
+    "image": "image/martyrsmemorial.jpg",
+    "cost": 799
+  },
+  {
+    "id": 5,
+    "title": "Paharpur Buddhist Vihara",
+    "shortDescription": "An ancient Buddhist monastery and UNESCO World Heritage Site.",
+    "category": "Family Friendly",
+    "image": "image/paharpurvihara.jpg",
+    "cost": 1799
+  },
+  {
+    "id": 6,
+    "title": "Ratargul Swamp Forest",
+    "shortDescription": "A freshwater swamp forest known as the 'Amazon of Bangladesh'.",
+    "category": "Family Friendly",
+    "image": "image/ratargul.jpg",
+    "cost": 2299
+  },
+  {
+    "id": 7,
+    "title": "Lawachara National Park",
+    "shortDescription": "A rainforest with diverse flora and fauna, including the endangered Western Hoolock Gibbon.",
+    "category": "Family Friendly",
+    "image": "image/lawachara.jpg",
+    "cost": 799
+  },
+  {
+    "id": 8,
+    "title": "Madhabkunda Waterfall",
+    "shortDescription": "The highest waterfall in Bangladesh, offering scenic beauty and a refreshing retreat.",
+    "category": "Family Friendly",
+    "image": "image/madhabkunda.jpg",
+    "cost": 1399
+  },
+  {
+    "id": 9,
+    "title": "Bhawal National Park",
+    "shortDescription": "A park with diverse ecosystems, home to various mammals, birds, and reptiles.",
+    "category": "Family Friendly",
+    "image": "image/bhawal.jpg",
+    "cost": 699
+  },
+  {
+    "id": 10,
+    "title": "Shahjalal University of Science and Technology (SUST)",
+    "shortDescription": "A renowned public university with a beautiful campus and architectural landmarks.",
+    "category": "Family Friendly",
+    "image": "image/sust.jpg",
+    "cost": 499
+  },
+  {
+    "id": 11,
+    "title": "Jaflong",
+    "shortDescription": "A scenic spot with rolling hills, waterfalls, and the unique Dauki River.",
+    "category": "Friend Circle",
+    "image": "image/jaflong.jpg",
+    "cost": 2699
+  },
+  {
+    "id": 12,
+    "title": "Saint Martin's Island",
+    "shortDescription": "A small coral island known for its beaches, coral reefs, and marine life.",
+    "category": "Friend Circle",
+    "image": "image/saintmartins.jpg",
+    "cost": 3799
+  },
+  {
+    "id": 13,
+    "title": "Sajek Valley",
+    "shortDescription": "A picturesque valley in the hills, offering stunning views and a tranquil atmosphere.",
+    "category": "Friend Circle",
+    "image": "image/sajek.jpg",
+    "cost": 4199
+  },
+  {
+    "id": 14,
+    "title": "Bandarban Hill Tracts",
+    "shortDescription": "A mountainous region with diverse indigenous communities, waterfalls, and hiking trails.",
+    "category": "Friend Circle",
+    "image": "image/bandarban.jpg",
+    "cost": 1699
+  },
+  {
+    "id": 15,
+    "title": "Nilgiri Hills",
+    "shortDescription": "The highest peaks in Bangladesh, offering panoramic views and challenging treks.",
+    "category": "Friend Circle",
+    "image": "image/nilgiri.jpg",
+    "cost": 2199
+  },
+  {
+    "id": 16,
+    "title": "Boga Lake",
+    "shortDescription": "The highest natural lake in Bangladesh, surrounded by hills and scenic beauty.",
+    "category": "Friend Circle",
+    "image": "image/bogalake.jpg",
+    "cost": 1499
+  },
+  {
+    "id": 17,
+    "title": "Cox's Bazar-Teknaf Marine Drive",
+    "shortDescription": "A scenic coastal highway offering stunning views of the Bay of Bengal.",
+    "category": "Friend Circle",
+    "image": "image/marinedrive.jpg",
+    "cost": 3999
+  },
+  {
+    "id": 18,
+    "title": "Moheshkhali Island",
+    "shortDescription": "An island with beaches, mangrove forests, and a historical Buddhist temple.",
+    "category": "Friend Circle",
+    "image": "image/moheshkhali.jpg",
+    "cost": 2599
+  },
+  {
+    "id": 19,
+    "title": "Sitakunda Hill",
+    "shortDescription": "A hill range with waterfalls, Buddhist monasteries, and ecological diversity.",
+    "category": "Friend Circle",
+    "image": "image/sitakunda.jpg",
+    "cost": 1199
+  },
+  {
+    "id": 20,
+    "title": "Guliakhali Sea Beach",
+    "shortDescription": "A popular beach with a long coastline, known for its tranquility and natural beauty.",
+    "category": "Friend Circle",
+    "image": "image/guliakhali.jpg",
+    "cost": 2899
+  },
+  {
+    "id": 21,
+    "title": "Jaflong",
+    "shortDescription": "A scenic spot with rolling hills, waterfalls, and the unique Dauki River.",
+    "category": "River Side",
+    "image": "image/jaflong.jpg",
+    "cost": 2699
+  },
+  {
+    "id": 22,
+    "title": "Kuakata Beach",
+    "shortDescription": "A beach where you can witness both sunrise and sunset over the Bay of Bengal.",
+    "category": "River Side",
+    "image": "image/kuakata.jpg",
+    "cost": 3199
+  },
+  {
+    "id": 23,
+    "title": "Tanguar Haor",
+    "shortDescription": "A unique wetland ecosystem with diverse flora and fauna, best visited during the monsoon season.",
+    "category": "River Side",
+    "image": "image/tanguarhaor.jpg",
+    "cost": 3099
+  },
+  {
+    "id": 24,
+    "title": "Kaptai Lake",
+    "shortDescription": "A large artificial lake surrounded by hills, offering boat rides and scenic beauty.",
+    "category": "River Side",
+    "image": "image/kaptai.jpg",
+    "cost": 2750
+  },
+  {
+    "id": 25,
+    "title": "Cox's Bazar-Teknaf Marine Drive",
+    "shortDescription": "A scenic coastal highway offering stunning views of the Bay of Bengal.",
+    "category": "River Side",
+    "image": "image/marinedrive.jpg",
+    "cost": 3999
+  },
+  {
+    "id": 26,
+    "title": "Madhabkunda Waterfall",
+    "shortDescription": "The highest waterfall in Bangladesh, offering scenic beauty and a refreshing retreat.",
+    "category": "River Side",
+    "image": "image/madhabkunda.jpg",
+    "cost": 1399
+  },
+  {
+    "id": 27,
+    "title": "Moynamoti War Cemetery",
+    "shortDescription": "A cemetery commemorating soldiers who died during World War II.",
+    "category": "River Side",
+    "image": "image/moynamoti.jpg",
+    "cost": 899
+  },
+  {
+    "id": 28,
+    "title": "Patenga Beach",
+    "shortDescription": "A popular beach near Chittagong, known for its lively atmosphere and water sports.",
+    "category": "River Side",
+    "image": "image/patenga.jpg",
+    "cost": 2699
+  },
+  {
+    "id": 29,
+    "title": "Rangamati Lake",
+    "shortDescription": "A scenic lake surrounded by hills, offering boat rides and picturesque views.",
+    "category": "River Side",
+    "image": "image/rangamatilake.jpg",
+    "cost": 2799
+  },
+  {
+    "id": 30,
+    "title": "Lalmai Hills",
+    "shortDescription": "Hills with historical and archaeological significance, offering hiking and panoramic views.",
+    "category": "River Side",
+    "image": "image/lalmai.jpg",
+    "cost": 2199
+  },
+  {
+    "id": 31,
+    "title": "Sajek Valley",
+    "shortDescription": "A picturesque valley in the hills, offering stunning views and a tranquil atmosphere.",
+    "category": "Hill Side",
+    "image": "image/sajek.jpg",
+    "cost": 4199
+  },
+  {
+    "id": 32,
+    "title": "Bandarban Hill Tracts",
+    "shortDescription": "A mountainous region with diverse indigenous communities, waterfalls, and hiking trails.",
+    "category": "Hill Side",
+    "image": "image/bandarban.jpg",
+    "cost": 1699
+  },
+  {
+    "id": 33,
+    "title": "Nilgiri Hills",
+    "shortDescription": "The highest peaks in Bangladesh, offering panoramic views and challenging treks.",
+    "category": "Hill Side",
+    "image": "image/nilgiri.jpg",
+    "cost": 2199
+  },
+  {
+    "id": 34,
+    "title": "Boga Lake",
+    "shortDescription": "The highest natural lake in Bangladesh, surrounded by hills and scenic beauty.",
+    "category": "Hill Side",
+    "image": "image/bogalake.jpg",
+    "cost": 1499
+  },
+  {
+    "id": 35,
+    "title": "Lawachara National Park",
+    "shortDescription": "A rainforest with diverse flora and fauna, including the endangered Western Hoolock Gibbon.",
+    "category": "Hill Side",
+    "image": "image/lawachara.jpg",
+    "cost": 799
+  },
+  {
+    "id": 36,
+    "title": "Madhobpur Lake",
+    "shortDescription": "A lake surrounded by tea gardens and hills, offering boating and scenic beauty.",
+    "category": "Hill Side",
+    "image": "image/madhobpurlake.jpg",
+    "cost": 1399
+  },
+  {
+    "id": 37,
+    "title": "Sitakunda Hill",
+    "shortDescription": "A hill range with waterfalls, Buddhist monasteries, and ecological diversity.",
+    "category": "Hill Side",
+    "image": "image/sitakunda.jpg",
+    "cost": 1199
+  },
+  {
+    "id": 38,
+    "title": "Cox's Bazar-Teknaf Marine Drive",
+    "shortDescription": "A scenic coastal highway offering stunning views of the Bay of Bengal.",
+    "category": "Hill Side",
+    "image": "image/marinedrive.jpg",
+    "cost": 3899
+  },
+  {
+    "id": 39,
+    "title": "Lalmai Hills",
+    "shortDescription": "Hills with historical and archaeological significance, offering hiking and panoramic views.",
+    "category": "Hill Side",
+    "image": "image/lalmai.jpg",
+    "cost": 2199
+  },
+  {
+    "id": 40,
+    "title": "Kuakata Beach",
+    "shortDescription": "A beach where you can witness both sunrise and sunset over the Bay of Bengal.",
+    "category": "Hill Side",
+    "image": "image/kuakata.jpg",
+    "cost": 3199
+  },
+  {
+    "id": 41,
+    "title": "Sundarbans Mangrove Forest",
+    "shortDescription": "The largest mangrove forest in the world, home to the Royal Bengal Tiger.",
+    "category": "Most Popular",
+    "image": "image/sundarbans.jpg",
+    "cost": 2699
+  },
+  {
+    "id": 42,
+    "title": "Cox's Bazar Beach",
+    "shortDescription": "The longest natural sea beach in the world, known for its golden sand and stunning sunsets.",
+    "category": "Most Popular",
+    "image": "image/coxsbazar.jpg",
+    "cost": 3499
+  },
+  {
+    "id": 43,
+    "title": "Jaflong",
+    "shortDescription": "A scenic spot with rolling hills, waterfalls, and the unique Dauki River.",
+    "category": "Most Popular",
+    "image": "image/jaflong.jpg",
+    "cost": 2699
+  },
+  {
+    "id": 44,
+    "title": "Sajek Valley",
+    "shortDescription": "A picturesque valley in the hills, offering stunning views and a tranquil atmosphere.",
+    "category": "Most Popular",
+    "image": "image/sajek.jpg",
+    "cost": 4199
+  },
+  {
+    "id": 45,
+    "title": "Saint Martin's Island",
+    "shortDescription": "A small coral island known for its beaches, coral reefs, and marine life.",
+    "category": "Most Popular",
+    "image": "image/saintmartins.jpg",
+    "cost": 3799
+  },
+  {
+    "id": 46,
+    "title": "Kuakata Beach",
+    "shortDescription": "A beach where you can witness both sunrise and sunset over the Bay of Bengal.",
+    "category": "Most Popular",
+    "image": "image/kuakata.jpg",
+    "cost": 3199
+  },
+  {
+    "id": 47,
+    "title": "Lalbagh Fort",
+    "shortDescription": "An incomplete 17th-century Mughal fort complex with beautiful gardens and architecture.",
+    "category": "Most Popular",
+    "image": "image/lalbaghfort.jpg",
+    "cost": 1199
+  },
+  {
+    "id": 48,
+    "title": "Bandarban Hill Tracts",
+    "shortDescription": "A mountainous region with diverse indigenous communities, waterfalls, and hiking trails.",
+    "category": "Most Popular",
+    "image": "image/bandarban.jpg",
+    "cost": 1499
+  },
+  {
+    "id": 49,
+    "title": "Rangamati Hill Tracts",
+    "shortDescription": "A scenic region with hills, lakes, and indigenous communities.",
+    "category": "Most Popular",
+    "image": "image/rangamatihilltracts.jpg",
+    "cost": 1899
+  },
+  {
+    "id": 50,
+    "title": "Paharpur Buddhist Vihara",
+    "shortDescription": "An ancient Buddhist monastery and UNESCO World Heritage Site.",
+    "category": "Most Popular",
+    "image": "image/paharpurvihara.jpg",
+    "cost": 1799
+  }
+]
