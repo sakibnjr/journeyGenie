@@ -1,4 +1,4 @@
-const TourList = ({ place }) => {
+const TourList = ({ place, viewTicket }) => {
   return (
     <div
       className="card card-normal w-auto h-96 bg-base-100 shadow-xl"
@@ -17,7 +17,10 @@ const TourList = ({ place }) => {
         </div>
 
         <div className="card-actions justify-end items-end align-bottom">
-          <button className="btn bg-sky-400 rounded-b-2xl rounded-t-none text-white w-full">
+          <button
+            className="btn bg-sky-400 rounded-b-2xl rounded-t-none text-white w-full"
+            onClick={viewTicket}
+          >
             Get Ticket
             <span>
               <svg

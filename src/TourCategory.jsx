@@ -6,7 +6,7 @@ const placeCategory = [
   { id: 5, title: "Most Popular", icon: "img/popular.jpg" },
 ];
 
-const Category = ({ open, changeCategory }) => {
+const Category = ({ changeCategory }) => {
   return (
     <>
       <p className="text-lg lg:text-3xl mb-4 m-2 lg:mx-12 text-sky-950 dark:text-white">

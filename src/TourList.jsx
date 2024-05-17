@@ -2,7 +2,7 @@ import { useState } from "react";
 import Places from "./Places.json";
 import TourPlaces from "./TourPlaces";
 
-const TourList = ({ tourTitle, categoryClicked }) => {
+const TourList = ({ tourTitle, categoryClicked, viewTicket }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 10;
   const lastIndex = currentPage * recordsPerPage;
@@ -24,9 +24,19 @@ const TourList = ({ tourTitle, categoryClicked }) => {
       </p>
       <div className="mx-2 lg:mx-12 grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center py-2 rounded-xl text-center">
         {categoryClicked === false
-          ? records.map((place) => <TourPlaces key={place.id} place={place} />)
+          ? records.map((place) => (
+              <TourPlaces
+                key={place.id}
+                place={place}
+                viewTicket={viewTicket}
+              />
+            ))
           : mostPopular.map((place) => (
-              <TourPlaces key={place.id} place={place} />
+              <TourPlaces
+                key={place.id}
+                place={place}
+                viewTicket={viewTicket}
+              />
             ))}
       </div>
       <nav className="mt-4">

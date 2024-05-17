@@ -1,27 +1,21 @@
-import { FaLocationArrow } from "react-icons/fa";
-
 import { BsFillPeopleFill } from "react-icons/bs";
 
 import { CiCalendarDate } from "react-icons/ci";
+import { BiNavigation } from "react-icons/bi";
 
-const TourInput = ({ open, setCity, getWeather, setDate, setTravelers }) => {
+const TourInput = ({ setCity, getWeather, setDate, setTravelers }) => {
   return (
-    <div
-      className={`${
-        open
-          ? "mx-2 border-2 p-4 md:p-6  rounded-xl lg:mx-12 shadow-md blur-sm"
-          : "mx-2 border-2 p-4 md:p-6  rounded-xl lg:mx-12 shadow-md bg-sky-50 dark:bg-slate-500"
-      }`}
-    >
-      <p className="text-center text-lg lg:mx-28  border-b-2 mb-4 lg:mb-0 border-sky-200 rounded uppercase text-sky-950 tracking-wides">
+    <div className="mx-2 border-2 p-4 md:p-6  rounded-xl lg:mx-12 shadow-md bg-sky-50 dark:bg-slate-500">
+      <p className="text-center text-lg lg:mx-28  border-b-2 mb-4 lg:mb-0 border-sky-200 rounded uppercase text-sky-950 dark:text-white tracking-wides">
         Enter Tour Details
       </p>
       <div className="flex flex-col md:flex-row justify-center items-center md:my-6 gap-6">
         <div className="flex items-center gap-2">
           <span>
-            <FaLocationArrow />
+            <BiNavigation />
           </span>
           <input
+            required
             type="text"
             placeholder="Where to?"
             className="input input-bordered hover:input-info w-full max-w-xs"
@@ -33,6 +27,7 @@ const TourInput = ({ open, setCity, getWeather, setDate, setTravelers }) => {
             <CiCalendarDate />
           </span>
           <input
+            required
             type="date"
             className="input input-bordered hover:input-info w-full max-w-xs"
             onChange={(e) => setDate(e.target.value)}
@@ -44,6 +39,7 @@ const TourInput = ({ open, setCity, getWeather, setDate, setTravelers }) => {
             <BsFillPeopleFill />
           </span>
           <input
+            required
             type="number"
             placeholder="Total travelers"
             className="input input-bordered hover:input-info w-full max-w-xs"
