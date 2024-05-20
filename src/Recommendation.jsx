@@ -73,9 +73,9 @@ const Recommendation = ({
   const displayByCity = tourDetails.filter((tour) => tour.city === city);
 
   return (
-    <div className="mx-2 lg:mx-12 bg-sky-50 dark:bg-slate-500 border-2 p-4 rounded-md shadow-md relative">
+    <>
       {city !== null && clicked && (
-        <div>
+        <div className="mx-2 lg:mx-12 bg-background dark:bg-slate-800 border-2 p-4 rounded-md shadow-md relative">
           <button
             className="text-4xl absolute right-[-14px] top-[-14px] drop-shadow-xl text-red-500"
             onClick={hideRecommendation}
@@ -152,12 +152,12 @@ const Recommendation = ({
                   </h1>
                   <p className="mb-2 pl-2 font-bold dark:text-black">
                     BDT: {displayByCity.map((tour) => tour.cost)}
-                    <span className="absolute font-thin bg-rose-500 text-sm text-sky-50 p-1 rounded-xl left-80 bottom-60">
+                    <span className="absolute font-thin bg-ternary2 text-sm text-sky-50 p-1 rounded-xl left-80 bottom-60">
                       Sponsored
                     </span>
                   </p>
                   <button
-                    className="w-full bg-sky-400 text-white rounded-b-xl rounded-t-none py-1"
+                    className="w-full bg-primary text-white rounded-b-xl rounded-t-none py-1"
                     onClick={viewTicket}
                   >
                     Get Ticket
@@ -179,7 +179,7 @@ const Recommendation = ({
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

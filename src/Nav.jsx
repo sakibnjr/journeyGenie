@@ -4,23 +4,23 @@ const Nav = ({ displaySignInScreen, loginStatus }) => {
       <div className="navbar">
         <div className="navbar-start">
           <a className="text-xl font-mono">
-            <span className="text-sky-400 font-bold py-2 pl-1 rounded-l-lg">
+            <span className="text-primary font-bold py-2 pl-1 rounded-l-lg">
               Journey
             </span>
             Genie
           </a>
         </div>
         <div className="navbar-start flex justify-between">
-          <button className="mx-2 hover:text-sky-400 hidden md:block">
+          <button className="mx-2 hover:text-primary hidden md:block">
             <a href="/">About</a>
           </button>
-          <button className="mx-2 hover:text-sky-400 hidden md:block">
+          <button className="mx-2 hover:text-primary hidden md:block">
             <a href="/">Support</a>
           </button>
-          <button className="mx-2 hover:text-sky-400 hidden md:block">
+          <button className="mx-2 hover:text-primary hidden md:block">
             <a href="/">FAQ</a>
           </button>
-          <button className="mx-2 hover:text-sky-400 hidden md:block">
+          <button className="mx-2 hover:text-primary hidden md:block">
             <a href="#" onClick={displaySignInScreen}>
               {loginStatus}
             </a>

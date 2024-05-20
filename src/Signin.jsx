@@ -32,11 +32,11 @@ function Signup({ displaySignInScreen }) {
       <h1 className="text-3xl font-bold text-center mb-4">Signup</h1>
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        className="bg-white dark:bg-slate-800 shadow-md rounded px-8 pt-6 pb-8 mb-4"
       >
         <div className="grid grid-col-1 md:grid-cols-2 md:gap-10">
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label className="block text-gray-700 dark:text-primary text-sm font-bold mb-2">
               First Name
             </label>
             <input
@@ -44,11 +44,11 @@ function Signup({ displaySignInScreen }) {
               type="text"
               value={formData.firstName}
               onChange={handleChange}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none dark:text-white border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label className="block text-gray-700 dark:text-primary text-sm font-bold mb-2">
               Last Name
             </label>
             <input
@@ -56,14 +56,14 @@ function Signup({ displaySignInScreen }) {
               type="text"
               value={formData.lastName}
               onChange={handleChange}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none dark:text-white border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
         </div>
 
         <div className="grid grid-col-1 md:grid-cols-2 md:gap-10">
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label className="block text-gray-700 dark:text-primary text-sm font-bold mb-2">
               Username
             </label>
             <input
@@ -71,11 +71,11 @@ function Signup({ displaySignInScreen }) {
               type="text"
               value={formData.username}
               onChange={handleChange}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none dark:text-white border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label className="block text-gray-700 dark:text-primary text-sm font-bold mb-2">
               Email
             </label>
             <input
@@ -83,14 +83,14 @@ function Signup({ displaySignInScreen }) {
               type="email"
               value={formData.email}
               onChange={handleChange}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none dark:text-white border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
         </div>
 
         <div className="grid grid-col-1 md:grid-cols-2 md:gap-10">
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label className="block text-gray-700 dark:text-primary text-sm font-bold mb-2">
               Password
             </label>
             <input
@@ -98,11 +98,11 @@ function Signup({ displaySignInScreen }) {
               type="password"
               value={formData.password}
               onChange={handleChange}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none dark:text-white border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
           <div className="mb-6">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label className="block text-gray-700 dark:text-primary text-sm font-bold mb-2">
               Confirm Password
             </label>
             <input
@@ -110,7 +110,7 @@ function Signup({ displaySignInScreen }) {
               type="password"
               value={formData.confirmPassword}
               onChange={handleChange}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow dark:text-white appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
         </div>
@@ -158,10 +158,10 @@ function Login({
       <h1 className="text-3xl font-bold text-center mb-4">Login</h1>
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        className="bg-white dark:bg-slate-800 shadow-md rounded px-8 pt-6 pb-8 mb-4"
       >
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">
+          <label className="block text-gray-700 dark:text-primary text-sm font-bold mb-2">
             Username
           </label>
           <input
@@ -170,11 +170,11 @@ function Login({
             placeholder="sakibnjr"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow dark:text-white appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
         <div className="mb-6">
-          <label className="block text-gray-700 text-sm font-bold mb-2">
+          <label className="block text-gray-700 dark:text-primary text-sm font-bold mb-2">
             Password
           </label>
           <input
@@ -183,7 +183,7 @@ function Login({
             placeholder="********"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow dark:text-white appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
         <div className="flex items-center justify-between">
@@ -217,7 +217,7 @@ function Signin({
           <button
             onClick={() => setShowSignup(true)}
             className={`bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded mr-2 ${
-              showSignup ? "bg-blue-500 text-white" : ""
+              showSignup ? "bg-white text-primary border-2 border-primary" : ""
             }`}
           >
             Signup
@@ -225,7 +225,7 @@ function Signin({
           <button
             onClick={() => setShowSignup(false)}
             className={`bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded ${
-              !showSignup ? "bg-blue-500 text-white" : ""
+              !showSignup ? "bg-white text-primary border-2 border-primary" : ""
             }`}
           >
             Login

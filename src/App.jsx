@@ -35,16 +35,19 @@ const App = () => {
           loginStatus={loginStatus}
         />
       </div>
-      {showSignIn && (
-        <Signin
-          displaySignInScreen={displaySignInScreen}
-          username={username}
-          password={password}
-          checkCredentials={checkCredentials}
-          setPassword={setPassword}
-          setUsername={setUsername}
-        />
-      )}
+      <div className="mx-10 md:w-1/2 md:mx-auto ">
+        {showSignIn && (
+          <Signin
+            displaySignInScreen={displaySignInScreen}
+            username={username}
+            password={password}
+            checkCredentials={checkCredentials}
+            setPassword={setPassword}
+            setUsername={setUsername}
+          />
+        )}
+      </div>
+
       <Home loginStatus={loginStatus} />
       <Footer />
     </div>

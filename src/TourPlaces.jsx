@@ -18,7 +18,7 @@ const TourList = ({ place, viewTicket }) => {
 
         <div className="card-actions justify-end items-end align-bottom">
           <button
-            className="btn bg-sky-400 rounded-b-2xl rounded-t-none text-white w-full"
+            className="btn bg-primary rounded-b-2xl rounded-t-none text-white w-full"
             onClick={viewTicket}
           >
             Get Ticket
