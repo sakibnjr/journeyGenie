@@ -19,7 +19,7 @@ const Ticket = ({ city, travelers, date, viewTicket }) => {
 
   return (
     <div className="b-2">
-      <div className="ticket bg-sky-50 m-10 p-4 rounded-md relative">
+      <div className="ticket bg-sky-50 dark:bg-slate-800 m-10 p-4 rounded-md relative">
         <button
           className="text-4xl absolute right-[-14px] top-[-14px] drop-shadow-xl text-red-500"
           onClick={viewTicket}
@@ -50,31 +50,31 @@ const Ticket = ({ city, travelers, date, viewTicket }) => {
             <table className="table">
               <tbody className="border-2 border-sky-200 rounded-md">
                 <tr className="hover">
-                  <td>Traveler Name: </td>
-                  <td>Sakib Nahid</td>
+                  <td className="dark:text-white">Traveler Name: </td>
+                  <td className="dark:text-white">Sakib Nahid</td>
                 </tr>
 
                 <tr className="hover">
-                  <td>Co-Travelers:</td>
-                  <td>{travelers}</td>
+                  <td className="dark:text-white">Co-Travelers:</td>
+                  <td className="dark:text-white">{travelers}</td>
                 </tr>
                 <tr className="hover">
-                  <td>Journey Date:</td>
-                  <td>{date}</td>
+                  <td className="dark:text-white">Journey Date:</td>
+                  <td className="dark:text-white">{date}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <p>
-            <span className="text-6xl flex">
+            <span className="text-6xl flex dark:text-white">
               <ImBarcode />
               <ImBarcode />
             </span>
-            <span className="text-xs">SN:{ticketID}</span>
+            <span className="text-xs dark:text-white">SN:{ticketID}</span>
           </p>
         </div>
-        <p className="text-xs flex justify-end gap-1 tracking-tighter relative bottom-4 right-6 md:static md:mt-4">
+        <p className="text-xs flex justify-end gap-1 tracking-tighter relative bottom-4 right-6 md:static md:mt-4 dark:text-white">
           <GoVerified />
           Powered by JourneyGenie
         </p>
